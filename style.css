@@ -1,0 +1,12 @@
+body{
+   background-image: url("imagenes/jdfenix.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+}
+
+.botones{
+    
+    width: 200px;
+    
+}
