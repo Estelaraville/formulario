@@ -1,12 +1,13 @@
 body{
-   background-image: url("imagenes/jdfenix.jpg");
+   background-image: url("imagenes/logogears.webp");
    background-repeat: no-repeat;
    background-size: cover;
    color: white;
+   position: relative;
+   padding-bottom: 4em;
+   min-height: 100vh;
 }
 
-.botones{
-    
-    width: 200px;
-    
+.botones{   
+    width: 200px;  
 }
