@@ -1,7 +1,7 @@
 function validar(form) {
     var capital = form.capital.value.trim(); 
     if (!capital.match(/^(-?\d*\.?\d*)$/)) { 
-        alert("Por favor, ingrese solo números para el capital.");
+        alert("Por favor, ingrese solo números.");
         form.capital.focus();
         return false;
     } else if (capital <= 0) {
@@ -9,12 +9,12 @@ function validar(form) {
         form.capital.focus();
         return false;
     } else {
-        calcularNuevoCapital(capital);
+        NuevoCapital(capital);
         return true; 
     }
 }
 
-function calcularNuevoCapital(capital) {
+function NuevoCapital(capital) {
     var nuevoCapital = parseFloat(capital) * 1.02;
     mostrarNuevoCapital(nuevoCapital);
 }
