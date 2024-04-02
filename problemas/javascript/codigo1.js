@@ -1,7 +1,7 @@
 function validar(form) {
     var capital = form.capital.value.trim(); 
     if (!capital.match(/^(-?\d*\.?\d*)$/)) { 
-        alert("Por favor, ingrese solo números.");
+        alert("Por favor, ingrese solo números sin espacios.");
         form.capital.focus();
         return false;
     } else if (capital <= 0) {
