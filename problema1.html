@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problemas</title>
+    <title>Problema 1</title>   
+    <script src="javascript/codigo1.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body>   
     <table width="1000" height="77" border="0">
         <nav>
         <tr>
@@ -48,13 +49,22 @@
         </tr></nav>
         <tr>
             <td colspan="7" align="center">
-                <br><br><br>
+                <br>
                 <div class="descripcion">
-                <h1>EJERCICIOS DE JAVASCRIPT</h1>
-                <p><h3>Deberan de realizar en un formulario con su operacion y validación correspondiente 
-                    de cada ejercicio, deberán de incorporar la css y js correspondiente. Deben de entregar 
-                    su actualización en el repositorio en github y el enlace para su visualización
-                </h3></p>
+                    <div class="form">
+                        <form action="" onsubmit="validar(this)">
+                        <h1>PROBLEMA 1</h1>
+                        <p><h3>Suponga que un individuo desea invertir su capital en un banco y desea sbaer cuanto dinero ganará
+                            después de un mes si el banco paga a razón de 2% mensual
+                        </h3></p>
+                        
+                        <p>Ingrese su capital actual:</p>
+                        <input type="text" id="capital" name="capital">
+                        <br>
+                        <input type="submit" name="enviar" value="Enviar">
+                        
+                    </form>
+                    </div>
             </div>
             </td>
         </tr>
@@ -65,5 +75,7 @@
         <h5>LARA VILLEGAS ESTEBAN  4IV7</h5>
     </div>
       </footer>
+    
+
 </body>
 </html>

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problemas</title>
+    <title>Problema 5</title>
+    <script src="javascript/codigo5.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -48,13 +49,39 @@
         </tr></nav>
         <tr>
             <td colspan="7" align="center">
-                <br><br><br>
+                <br>
                 <div class="descripcion">
-                <h1>EJERCICIOS DE JAVASCRIPT</h1>
-                <p><h3>Deberan de realizar en un formulario con su operacion y validación correspondiente 
-                    de cada ejercicio, deberán de incorporar la css y js correspondiente. Deben de entregar 
-                    su actualización en el repositorio en github y el enlace para su visualización
-                </h3></p>
+                    <h1>PROBLEMA 5</h1>
+                    <p><h3>Un maestro desea saber que porcentaje de hombres y que porcentaje de mujeres 
+                        hay en un grupo de estudiantes
+                    </h3></p>
+                    <div class="form">
+                        <form action="" onsubmit="validar(this)">
+                            <table>
+                                <tr>
+                                     <td>Ingrese la cantidad total de alumnos
+                                        <input type="text" name="alumnos" id="alumnos">
+                                     </td>
+                
+                                     <td align="right">
+                                        <p>Ingrese la cantidad de hombres:</p>
+                                            <input type="text" name="chicos" id="chicos">
+                                        
+                                        <p>Ingrese la cantidad de mujeres:</p>
+                                            <input type="text" name="mujeres" id="mujeres">
+                                        
+                                     </td>
+                                </tr>
+                
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <br>
+                                        <input type="submit" name="enviar" value="Enviar">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
             </div>
             </td>
         </tr>
@@ -65,5 +92,6 @@
         <h5>LARA VILLEGAS ESTEBAN  4IV7</h5>
     </div>
       </footer>
+    
 </body>
 </html>

@@ -33,8 +33,8 @@ function validar(form){
     } 
 
     var suma = (chicos+mujeres);
-    if(suma>alumnos){
-        alert("Escriba valores que su suma no exceda el valor total del número de alumnos")
+    if(suma>alumnos || suma<alumnos){
+        alert("Escriba valores que su suma no exceda o falte el valor total del número de alumnos")
         form.chicos.focus();
         return false;
     } else{

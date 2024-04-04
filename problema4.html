@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problemas</title>
+    <title>Problema 4</title>
+    <script src="javascript/codigo4.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -48,13 +49,51 @@
         </tr></nav>
         <tr>
             <td colspan="7" align="center">
-                <br><br><br>
+                
                 <div class="descripcion">
-                <h1>EJERCICIOS DE JAVASCRIPT</h1>
-                <p><h3>Deberan de realizar en un formulario con su operacion y validación correspondiente 
-                    de cada ejercicio, deberán de incorporar la css y js correspondiente. Deben de entregar 
-                    su actualización en el repositorio en github y el enlace para su visualización
-                </h3></p>
+                    <h1>PROBLEMA 4</h1>
+                    <p><h3>Un alumno desea saber cual será su calificación final en la materia de Algoritmos. Dicha 
+                     calificación se compone de los siguientes porcentajes:
+                     <ul>
+                         <li>55% del promedio de sus tres calificaciones parciales</li>
+                         <li>30% de la calificación del examen final</li>
+                         <li>15% de la calificación de un trabajo final</li>
+                     </ul>
+                    </h3></p>
+                    
+                    <div class="form">
+                      <form action="" onsubmit="validar(this)">
+                         <table width="800" align="center">
+                             <tr>
+                                 <td>
+                                     <p>Primer parcial</p>
+                                         <input type="text" name="primero" name="primero">
+                                     <p>Segundo parcial</p>
+                                         <input type="text" name="segundo" id="segundo">
+                                     <p>Tercer parcial</p>
+                                         <input type="text" name="tercero" id="tercero">
+                                         
+                                 </td>
+             
+                                 <td align="center">
+                                     Calificacíon del exámen final
+                                         <input type="text" name="examen" id="examen">
+                                 </td>
+             
+                                 <td align="center">
+                                     Calificación del trabajo final
+                                         <input type="text" name="trabajo" id="trabajo">
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td colspan="3" align="center">
+                                     <br>
+                                         <input type="submit" name="enviar" value="Enviar">
+                                 </td>
+                             </tr>
+                         </table>
+                      </form>
+                    </div>
             </div>
             </td>
         </tr>
@@ -65,5 +104,6 @@
         <h5>LARA VILLEGAS ESTEBAN  4IV7</h5>
     </div>
       </footer>
+    
 </body>
 </html>
