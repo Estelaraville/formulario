@@ -20,7 +20,7 @@ function validar(form){
         form.chicos.focus();
         return false;
     } 
-
+    
     var mujeres = form.mujeres.value.trim();
     if (!mujeres.match(/^(-?\d*\.?\d*)$/)) { 
         alert("Escriba un valor mayor o igual a 0 y unicamente números porfavor");
@@ -30,11 +30,17 @@ function validar(form){
         alert("Escriba un valor mayor o igual a 0 y unicamente números porfavor");
         form.mujeres.focus();
         return false;
+    } 
+
+    var suma = (chicos+mujeres);
+    if(suma>alumnos){
+        alert("Escriba valores que su suma no exceda el valor total del número de alumnos")
+        form.chicos.focus();
+        return false;
     } else{
-        promedio(parseFloat(alumnos),parseFloat(chicos), parseFloat(mujeres));
+        promedio(parseFloat(alumnos), parseFloat(chicos), parseFloat(mujeres));
         return true;
     }
-    
 }
 
 function promedio(alumnos, chicos, mujeres){
