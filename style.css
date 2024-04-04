@@ -1,13 +1,9 @@
 body{
-   background-image: url("imagenes/logogears.webp");
+   background-image: url("imagenes/fondo.webp");
    background-repeat: no-repeat;
    background-size: cover;
    color: white;
    position: relative;
    padding-bottom: 4em;
    min-height: 100vh;
-}
-
-.botones{   
-    width: 200px;  
 }

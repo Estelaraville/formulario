@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 4</title>
+    <script src="javascript/codigo4.js"></script>
+</head>
+<body>
+    <h1>PROBLEMA 4</h1>
+       <p><h3>Un alumno desea saber cual será su calificación final en la materia de Algoritmos. Dicha 
+        calificación se compone de los siguientes porcentajes:
+        <ul>
+            <li>55% del promedio de sus tres calificaciones parciales</li>
+            <li>30% de la calificación del examen final</li>
+            <li>15% de la calificación de un trabajo final</li>
+        </ul>
+       </h3></p>
+       
+       <div class="form">
+         <form action="" onsubmit="validar(this)">
+            <table width="800" align="center">
+                <tr>
+                    <td>
+                        <p>Primer parcial</p>
+                            <input type="text" name="primero" name="primero">
+                        <p>Segundo parcial</p>
+                            <input type="text" name="segundo" id="segundo">
+                        <p>Tercer parcial</p>
+                            <input type="text" name="tercero" id="tercero">
+                            
+                    </td>
+
+                    <td align="center">
+                        Calificacíon del exámen final
+                            <input type="text" name="examen" id="examen">
+                    </td>
+
+                    <td>
+                        Calificación del trabajo final
+                            <input type="text" name="trabajo" id="trabajo">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <br>
+                            <input type="submit" name="enviar" value="Enviar">
+                    </td>
+                </tr>
+            </table>
+         </form>
+       </div>
+</body>
+</html>

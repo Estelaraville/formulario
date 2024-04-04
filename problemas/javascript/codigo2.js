@@ -1,33 +1,33 @@
 function validar(form) {
     var venta1 = form.num1.value.trim(); 
     if (!venta1.match(/^(-?\d*\.?\d*)$/)) { 
-        alert("Por favor, ingrese solo números.");
+        alert("Escriba un valor mayor o igual a 0 y solo números porfavor");
         form.venta1.focus();
         return false;
     } else if (parseFloat(venta1) < 0) {
-        alert("Escriba un valor mayor o igual a 0 por favor.");
+        alert("Escriba un valor mayor o igual a 0 y solo números porfavor");
         form.capital.focus();
         return false;
     } 
 
     var venta2 = form.num2.value.trim(); 
     if (!venta2.match(/^(-?\d*\.?\d*)$/)) { 
-        alert("Por favor, ingrese solo números.");
+        alert("Escriba un valor mayor o igual a 0 y solo números porfavor");
         form.venta2.focus();
         return false;
     } else if (parseFloat(venta2) < 0) {
-        alert("Escriba un valor mayor o igual a 0 por favor.");
+        alert("Escriba un valor mayor o igual a 0 y solo números porfavor");
         form.venta2.focus();
         return false;
     } 
 
     var venta3 = form.num3.value.trim(); 
     if (!venta3.match(/^(-?\d*\.?\d*)$/)) { 
-        alert("Por favor, ingrese solo números.");
+        alert("Escriba un valor mayor o igual a 0 y solo números porfavor");
         form.venta3.focus();
         return false;
     } else if (parseFloat(venta3) < 0) {
-        alert("Escriba un valor mayor o igual a 0 por favor.");
+        alert("Escriba un valor mayor o igual a 0 y solo números porfavor");
         form.venta3.focus();
         return false;
     } else{

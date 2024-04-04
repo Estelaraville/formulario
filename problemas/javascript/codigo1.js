@@ -1,11 +1,11 @@
 function validar(form) {
     var capital = form.capital.value.trim(); 
     if (!capital.match(/^(-?\d*\.?\d*)$/)) { 
-        alert("Por favor, ingrese solo números sin espacios.");
+        alert("Por favor, ingrese solo números sin espacios y mayores a 0");
         form.capital.focus();
         return false;
     } else if (capital <= 0) {
-        alert("Escriba un valor mayor a 0 por favor.");
+        alert("Por favor, ingrese solo números sin espacios y mayores a 0");
         form.capital.focus();
         return false;
     } else {
